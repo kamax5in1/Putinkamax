@@ -3,176 +3,697 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Putin & Kamax Vietnam - Tổng Kho Nước Giặt Xả Sỉ Toàn Quốc</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tổng Kho Nước Giặt Xả Chính Hãng Putin & Kamax</title>
+    <!-- Font chữ hiện đại Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body class="bg-slate-50 text-slate-800 font-sans">
+    
+    <style>
+        :root {
+            --primary: #0284c7;
+            --primary-dark: #0369a1;
+            --secondary: #0f172a;
+            --accent: #22c55e;
+            --accent-hover: #16a34a;
+            --bg-light: #f8fafc;
+            --text-main: #334155;
+            --text-muted: #64748b;
+            --radius: 16px;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
 
-    <!-- Header -->
-    <header class="bg-[#0b2545] text-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-bottle-droplet text-blue-400 text-2xl"></i>
-                <div>
-                    <h1 class="text-base font-black uppercase text-blue-400">Putin & Kamax</h1>
-                    <p class="text-[10px] text-slate-300">Chủ kho: Dương Long Khánh</p>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* HEADER */
+        header {
+            background: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 15px 0;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+        }
+
+        .brand-info h1 {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--secondary);
+            letter-spacing: -0.5px;
+        }
+
+        .brand-info p {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .btn-zalo-top {
+            background: #e0f2fe;
+            color: var(--primary-dark);
+            padding: 10px 18px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .btn-zalo-top:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: rgba(2, 132, 199, 0.15);
+            filter: blur(100px);
+            top: -200px;
+            right: -200px;
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            background: rgba(34, 197, 94, 0.15);
+            color: #4ade80;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 20px;
+            border: 1px solid rgba(74, 222, 128, 0.3);
+        }
+
+        .hero h2 {
+            font-size: clamp(28px, 4vw, 46px);
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: clamp(15px, 2vw, 18px);
+            color: #94a3b8;
+            margin-bottom: 30px;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 14px rgba(34, 197, 94, 0.4);
+            transition: var(--transition);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: var(--transition);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* MAIN PRODUCTS */
+        main {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h3 {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--secondary);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: var(--transition);
+            border: 1px solid #f1f5f9;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.08);
+        }
+
+        .product-img-box {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+            background: #f1f5f9;
+        }
+
+        .product-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-img-box img {
+            transform: scale(1.05);
+        }
+
+        .product-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-tag {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .product-content h4 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 8px;
+        }
+
+        .product-content p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .product-price {
+            font-weight: 700;
+            color: #e11d48;
+            font-size: 15px;
+            margin-bottom: 15px;
+            background: #fff1f2;
+            padding: 6px 12px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .product-btn {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-weight: 700;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .product-btn:hover {
+            background: var(--primary-dark);
+        }
+
+        /* FEATURES / TRUST SECTION */
+        .trust-section {
+            background: #ffffff;
+            padding: 70px 20px;
+            margin-top: 60px;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .trust-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .trust-container > span {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .trust-container h3 {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--secondary);
+            margin-top: 8px;
+            margin-bottom: 15px;
+        }
+
+        .trust-container > p {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            font-size: 15px;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .trust-card {
+            background: var(--bg-light);
+            border-radius: var(--radius);
+            overflow: hidden;
+            text-align: left;
+            border: 1px solid #e2e8f0;
+        }
+
+        .trust-img {
+            height: 160px;
+            overflow: hidden;
+        }
+
+        .trust-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .trust-info {
+            padding: 20px;
+        }
+
+        .trust-info h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 6px;
+        }
+
+        .trust-info p {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* OWNER / QR SECTION */
+        .owner-section {
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .owner-card {
+            background: white;
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid #e2e8f0;
+        }
+
+        .owner-card h3 {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--secondary);
+            margin-bottom: 5px;
+        }
+
+        .owner-card p {
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .qr-box {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 25px auto;
+            padding: 10px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border: 1px solid #f1f5f9;
+        }
+
+        .qr-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--secondary);
+            color: #94a3b8;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: #38bdf8;
+            font-weight: 600;
+        }
+
+        /* NÚT ZALO FLOATING (GỌI NHANH GÓC MÀN HÌNH) */
+        .floating-zalo {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #0068ff;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 8px 20px rgba(0, 104, 255, 0.4);
+            z-index: 999;
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+        }
+
+        .floating-zalo:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 104, 255, 0.6); }
+            70% { box-shadow: 0 0 0 15px rgba(0, 104, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 104, 255, 0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-bottle-droplet"></i>
+                </div>
+                <div class="brand-info">
+                    <h1>Putin & Kamax</h1>
+                    <p>Chủ kho: Dương Long Khánh</p>
                 </div>
             </div>
             <div>
-                <a href="https://zalo.me/0915155284" target="_blank" class="bg-blue-600 text-white font-bold px-3 py-1.5 rounded-lg text-xs flex items-center space-x-1">
-                    <i class="fa-solid fa-comment"></i> <span>Zalo Sỉ</span>
+                <a href="https://zalo.me/0915155284" target="_blank" class="btn-zalo-top">
+                    <i class="fa-solid fa-comments"></i> <span>Zalo Sỉ</span>
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Banner -->
-    <section class="bg-[#0b2545] text-white py-10 px-4 text-center">
-        <div class="max-w-2xl mx-auto">
-            <span class="bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Được Các Chủ Tiệm Giặt Tin Dùng</span>
-            <h2 class="text-2xl md:text-4xl font-black my-3">Tổng Kho Nước Giặt Xả Chính Hãng</h2>
-            <p class="text-slate-300 text-xs md:text-sm mb-6">Chính sách giá sỉ trực tiếp từ kho: "Mua 1 can - Giá sỉ như 10 can[span_0](start_span)"[span_0](end_span). Phục vụ tiệm giặt, khách sạn, homestay[span_1](start_span)[span_1](end_span).</p>
-            <div class="flex justify-center gap-3">
-                <a href="https://zalo.me/0915155284" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2">
-                    <i class="fa-solid fa-comment"></i> Zalo: 0915.155.284
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge"><i class="fa-solid fa-shield-halved"></i> Được Các Chủ Tiệm Giặt Tin Dùng</span>
+            <h2>Tổng Kho Nước Giặt Xả Chính Hãng</h2>
+            <p>Chính sách giá sỉ trực tiếp từ kho: <strong>"Mua 1 can - Giá sỉ như 10 can"</strong>. Phục vụ chuyên nghiệp cho tiệm giặt, khách sạn, homestay trên toàn quốc.</p>
+            <div class="hero-cta">
+                <a href="https://zalo.me/0915155284" target="_blank" class="btn-primary">
+                    <i class="fa-solid fa-phone-volume"></i> Zalo: 0915.155.284
                 </a>
-                <a href="https://www.facebook.com/share/1CQHtYw9YQ/?mibextid=wwXIfr" target="_blank" class="bg-blue-800 text-white px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2">
-                    <i class="fa-brands fa-facebook"></i> Facebook
+                <a href="https://www.facebook.com/share/1CQHtYw9YQ/?mibextid=wwXIfr" target="_blank" class="btn-secondary">
+                    <i class="fa-brands fa-facebook"></i> Kết Bạn Facebook
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Danh sách sản phẩm chính -->
-    <main class="container mx-auto px-4 py-8">
-        <h3 class="text-xl font-black text-[#0b2545] mb-6 flex items-center gap-2">
-            <i class="fa-solid fa-boxes-stacked text-blue-600"></i> Danh Mục Sản Phẩm Chính Hãng
-        </h3>
+    <!-- MAIN PRODUCTS -->
+    <main>
+        <div class="section-title">
+            <h3><i class="fa-solid fa-boxes-stacked" style="color: var(--primary);"></i> Danh Mục Sản Phẩm Chính Hãng</h3>
+        </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            
-            <!-- SP 1: Nước giặt Chuyên dụng -->
-            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col justify-between">
+        <div class="products-grid">
+            <!-- Sản phẩm 1 -->
+            <div class="product-card">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=500&q=80" alt="Nước giặt chuyên dụng Putin" class="w-full h-48 object-cover bg-slate-100">
-                    <div class="p-4">
-                        <span class="text-[10px] bg-blue-100 text-blue-700 font-bold px-2 py-0.5 rounded">Nước giặt Chuyên dụng</span>
-                        <h4 class="font-bold text-sm mt-2 text-slate-800">Putin Proclean 5X (10Kg)[span_2](start_span)[span_2](end_span)</h4>
-                        <p class="text-slate-500 text-[11px] mt-1">Làm sạch sâu, trắng sạch vượt trội, không mùi hương[span_3](start_span)[span_3](end_span).</p>
-                        <p class="text-red-600 font-black text-sm mt-2">Liên hệ giá sỉ[span_4](start_span)[span_4](end_span)</p>
+                    <div class="product-img-box">
+                        <img src="https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=500&q=80" alt="Nước giặt chuyên dụng Putin">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">Nước giặt Chuyên dụng</span>
+                        <h4>Putin Proclean 5X (10Kg)</h4>
+                        <p>Làm sạch sâu, trắng sạch vượt trội, không mùi hương thích hợp cho tiệm giặt sấy.</p>
+                        <div class="product-price">Liên hệ giá sỉ tận kho</div>
                     </div>
                 </div>
-                <div class="p-4 pt-0">
-                    <a href="https://zalo.me/0915155284" target="_blank" class="block w-full bg-[#0b2545] text-white text-center font-bold py-2 rounded-xl text-xs">Chat Zalo Đặt Hàng</a>
-                </div>
+                <a href="https://zalo.me/0915155284" target="_blank" class="product-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Chat Zalo Đặt Hàng
+                </a>
             </div>
 
-            <!-- SP 2: Nước giặt xả 5 in 1 -->
-            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col justify-between">
+            <!-- Sản phẩm 2 -->
+            <div class="product-card">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=500&q=80" alt="Nước giặt xả 5 in 1 Kamax" class="w-full h-48 object-cover bg-slate-100">
-                    <div class="p-4">
-                        <span class="text-[10px] bg-pink-100 text-pink-700 font-bold px-2 py-0.5 rounded">Nước giặt xả 5 in 1</span>
-                        <h4 class="font-bold text-sm mt-2 text-slate-800">Kamax SuperClean[span_5](start_span)[span_5](end_span)[span_6](start_span)[span_6](end_span)</h4>
-                        <p class="text-slate-500 text-[11px] mt-1">Thơm ngát hương 365 ngày, kháng khuẩn, bảo vệ sợi vải[span_7](start_span)[span_7](end_span)[span_8](start_span)[span_8](end_span)[span_9](start_span)[span_9](end_span).</p>
-                        <p class="text-red-600 font-black text-sm mt-2">Liên hệ giá sỉ[span_10](start_span)[span_10](end_span)</p>
+                    <div class="product-img-box">
+                        <img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=500&q=80" alt="Nước giặt xả 5 in 1 Kamax">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">Nước giặt xả 5 in 1</span>
+                        <h4>Kamax SuperClean</h4>
+                        <p>Thơm ngát hương 365 ngày, kháng khuẩn tối ưu, bảo vệ sợi vải mềm mại.</p>
+                        <div class="product-price">Liên hệ giá sỉ tận kho</div>
                     </div>
                 </div>
-                <div class="p-4 pt-0">
-                    <a href="https://zalo.me/0915155284" target="_blank" class="block w-full bg-[#0b2545] text-white text-center font-bold py-2 rounded-xl text-xs">Chat Zalo Đặt Hàng</a>
-                </div>
+                <a href="https://zalo.me/0915155284" target="_blank" class="product-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Chat Zalo Đặt Hàng
+                </a>
             </div>
 
-            <!-- SP 3: Nước xả vải Putin -->
-            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col justify-between">
+            <!-- Sản phẩm 3 -->
+            <div class="product-card">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=80" alt="Nước xả vải Putin" class="w-full h-48 object-cover bg-slate-100">
-                    <div class="p-4">
-                        <span class="text-[10px] bg-purple-100 text-purple-700 font-bold px-2 py-0.5 rounded">Nước xả vải Putin</span>
-                        <h4 class="font-bold text-sm mt-2 text-slate-800">Nước xả cao cấp Putin[span_11](start_span)[span_11](end_span)[span_12](start_span)[span_12](end_span)</h4>
-                        <p class="text-slate-500 text-[11px] mt-1">Lưu hương hạnh phúc 365 ngày, siêu mềm vải[span_13](start_span)[span_13](end_span)[span_14](start_span)[span_14](end_span).</p>
-                        <p class="text-red-600 font-black text-sm mt-2">Liên hệ giá sỉ[span_15](start_span)[span_15](end_span)</p>
+                    <div class="product-img-box">
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=80" alt="Nước xả vải Putin">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">Nước xả vải Putin</span>
+                        <h4>Nước xả cao cấp Putin</h4>
+                        <p>Lưu hương hạnh phúc 365 ngày, siêu mềm vải, bền mùi sau khi sấy.</p>
+                        <div class="product-price">Liên hệ giá sỉ tận kho</div>
                     </div>
                 </div>
-                <div class="p-4 pt-0">
-                    <a href="https://zalo.me/0915155284" target="_blank" class="block w-full bg-[#0b2545] text-white text-center font-bold py-2 rounded-xl text-xs">Chat Zalo Đặt Hàng</a>
-                </div>
+                <a href="https://zalo.me/0915155284" target="_blank" class="product-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Chat Zalo Đặt Hàng
+                </a>
             </div>
 
-            <!-- SP 4: Tinh chất cốt xả vải -->
-            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col justify-between">
+            <!-- Sản phẩm 4 -->
+            <div class="product-card">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=500&q=80" alt="Tinh chất cốt xả vải Putin" class="w-full h-48 object-cover bg-slate-100">
-                    <div class="p-4">
-                        <span class="text-[10px] bg-rose-100 text-rose-700 font-bold px-2 py-0.5 rounded">Tinh chất cốt xả vải</span>
-                        <h4 class="font-bold text-sm mt-2 text-slate-800">Tinh Cốt Xả Vải Putin[span_16](start_span)[span_16](end_span)[span_17](start_span)[span_17](end_span)</h4>
-                        <p class="text-slate-500 text-[11px] mt-1">Đậm đặc gấp 10 lần, thơm lâu sau phơi sấy[span_18](start_span)[span_18](end_span).</p>
-                        <p class="text-red-600 font-black text-sm mt-2">Liên hệ giá sỉ[span_19](start_span)[span_19](end_span)</p>
+                    <div class="product-img-box">
+                        <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=500&q=80" alt="Tinh chất cốt xả vải Putin">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">Tinh chất cốt xả vải</span>
+                        <h4>Tinh Cốt Xả Vải Putin</h4>
+                        <p>Đậm đặc gấp 10 lần, siêu tiết kiệm, thơm lâu đặc biệt sau phơi sấy.</p>
+                        <div class="product-price">Liên hệ giá sỉ tận kho</div>
                     </div>
                 </div>
-                <div class="p-4 pt-0">
-                    <a href="https://zalo.me/0915155284" target="_blank" class="block w-full bg-[#0b2545] text-white text-center font-bold py-2 rounded-xl text-xs">Chat Zalo Đặt Hàng</a>
-                </div>
+                <a href="https://zalo.me/0915155284" target="_blank" class="product-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Chat Zalo Đặt Hàng
+                </a>
             </div>
-
         </div>
     </main>
 
-    <!-- Phần hình ảnh Chủ tiệm giặt toàn quốc tin dùng -->
-    <section class="bg-blue-900/10 py-10 border-t border-slate-200 mt-8">
-        <div class="container mx-auto px-4 text-center">
-            <span class="bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Uy Tín Hàng Đầu</span>
-            <h3 class="text-xl md:text-2xl font-black text-[#0b2545] mt-2 mb-2">Các Chủ Tiệm Giặt Toàn Quốc Tin Dùng Putin & Kamax</h3>
-            <p class="text-slate-600 text-xs max-w-xl mx-auto mb-6">Giải pháp tối ưu chi phí, nâng cao chất lượng dịch vụ giặt sấy cho hàng nghìn đối tác trên toàn quốc[span_20](start_span)[span_20](end_span)[span_21](start_span)[span_21](end_span).</p>
+    <!-- TRUST SECTION -->
+    <section class="trust-section">
+        <div class="trust-container">
+            <span>Uy Tín Hàng Đầu</span>
+            <h3>Các Chủ Tiệm Giặt Toàn Quốc Tin Dùng Putin & Kamax</h3>
+            <p>Giải pháp tối ưu chi phí, nâng cao chất lượng dịch vụ giặt sấy cho hàng nghìn đối tác trên toàn quốc.</p>
             
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
-                <div class="bg-white rounded-xl overflow-hidden shadow border border-slate-200">
-                    <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=500&q=80" alt="Tiệm giặt sấy" class="w-full h-36 object-cover">
-                    <div class="p-3 text-left">
-                        <h4 class="font-bold text-slate-800 text-xs">Tiệm Giặt Sấy Chuyên Nghiệp</h4>
-                        <p class="text-[11px] text-slate-500 mt-0.5">Tin dùng dòng nước giặt can 10kg tiết kiệm.</p>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-img">
+                        <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=500&q=80" alt="Tiệm giặt sấy">
+                    </div>
+                    <div class="trust-info">
+                        <h4>Tiệm Giặt Sấy Chuyên Nghiệp</h4>
+                        <p>Tin dùng dòng nước giặt can 10kg tiết kiệm, đánh bay vết bẩn hiệu quả cao.</p>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl overflow-hidden shadow border border-slate-200">
-                    <img src="https://images.unsplash.com/photo-1545173190-975a2e6eb441?auto=format&fit=crop&w=500&q=80" alt="Khách sạn homestay" class="w-full h-36 object-cover">
-                    <div class="p-3 text-left">
-                        <h4 class="font-bold text-slate-800 text-xs">Khách Sạn & Homestay</h4>
-                        <p class="text-[11px] text-slate-500 mt-0.5">Lưu hương bền lâu, mềm mại sợi vải.</p>
+                <div class="trust-card">
+                    <div class="trust-img">
+                        <img src="https://images.unsplash.com/photo-1545173190-975a2e6eb441?auto=format&fit=crop&w=500&q=80" alt="Khách sạn homestay">
+                    </div>
+                    <div class="trust-info">
+                        <h4>Khách Sạn & Homestay</h4>
+                        <p>Lưu hương bền lâu, mềm mại sợi vải mang lại trải nghiệm tuyệt vời cho khách hàng.</p>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl overflow-hidden shadow border border-slate-200">
-                    <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=500&q=80" alt="Đại lý phân phối" class="w-full h-36 object-cover">
-                    <div class="p-3 text-left">
-                        <h4 class="font-bold text-slate-800 text-xs">Hệ Thống Đại Lý Sỉ</h4>
-                        <p class="text-[11px] text-slate-500 mt-0.5">Chính sách chiết khấu cao toàn quốc.</p>
+                <div class="trust-card">
+                    <div class="trust-img">
+                        <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=500&q=80" alt="Đại lý phân phối">
+                    </div>
+                    <div class="trust-info">
+                        <h4>Hệ Thống Đại Lý Sỉ</h4>
+                        <p>Chính sách chiết khấu cao toàn quốc, hỗ trợ tối đa cho các đối tác phát triển.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Liên hệ trực tiếp chủ kho & QR Zalo -->
-    <section class="bg-white py-10 border-t border-slate-200 text-center">
-        <div class="container mx-auto px-4 max-w-sm">
-            <h3 class="text-lg font-black text-[#0b2545] mb-1">Kết Nối Trực Tiếp Chủ Kho</h3>
-            <p class="text-slate-500 text-xs mb-4">Anh Dương Long Khánh</p>
-            <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 inline-block mb-4 shadow-inner">
-                <img src="https://i.ibb.co/6R35S92/zalo-qr.jpg" alt="QR Zalo Dương Long Khánh" class="w-40 h-40 mx-auto rounded-lg object-cover" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=300&q=80'">
+    <!-- OWNER / QR SECTION -->
+    <section class="owner-section">
+        <div class="owner-card">
+            <h3>Kết Nối Trực Tiếp Chủ Kho</h3>
+            <p>Anh Dương Long Khánh</p>
+            <div class="qr-box">
+                <img src="https://i.ibb.co/6R35S92/zalo-qr.jpg" alt="QR Zalo Dương Long Khánh">
             </div>
-            <div>
-                <a href="https://zalo.me/0915155284" target="_blank" class="bg-blue-600 text-white font-bold px-5 py-2.5 rounded-xl text-xs inline-flex items-center gap-2 shadow">
-                    <i class="fa-solid fa-comment"></i> Mở Zalo Chat (0915.155.284)
-                </a>
-            </div>
+            <a href="https://zalo.me/0915155284" target="_blank" class="btn-primary" style="width: 100%; justify-content: center;">
+                <i class="fa-solid fa-comments"></i> Mở Zalo Chat (0915.155.284)
+            </a>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-[#0b2545] text-white py-6 text-center text-xs">
-        <p class="font-bold text-blue-400">Công Ty Putin & Kamax Vietnam</p>
-        <p class="text-slate-300 mt-1">Hotline/Zalo: 0915.155.284 | <a href="https://www.facebook.com/share/1CQHtYw9YQ/?mibextid=wwXIfr" target="_blank" class="underline text-blue-300">Facebook Cá Nhân</a></p>
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>Công Ty Putin & Kamax Vietnam</strong></p>
+        <p>Hotline/Zalo: 0915.155.284 | <a href="https://www.facebook.com/share/1CQHtYw9YQ/?mibextid=wwXIfr" target="_blank">Facebook Cá Nhân</a></p>
+        <p style="font-size: 12px; color: #64748b; margin-top: 15px;">© 2026 Tổng Kho Nước Giặt Xả Chính Hãng. All rights reserved.</p>
     </footer>
+
+    <!-- NÚT ZALO NỔI BẬT GÓC MÀN HÌNH -->
+    <a href="https://zalo.me/0915155284" target="_blank" class="floating-zalo" title="Chat Zalo ngay">
+        <i class="fa-solid fa-comment-dots"></i>
+    </a>
 
 </body>
 </html>
