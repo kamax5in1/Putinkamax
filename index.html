@@ -3,158 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sàn Kết Nối Trực Tiếp - Không Phí Sàn</title>
+    <title>Putin & Kamax Vietnam - Kho Hàng Nước Giặt Xả Sỉ Trực Tiếp</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .bg-cobalt { background-color: #0b2545; }
+        .text-cobalt { color: #0b2545; }
+        .border-cobalt { border-color: #0b2545; }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-slate-50 text-slate-800 font-sans">
 
-    <!-- Header / Navbar -->
-    <header class="bg-blue-600 text-white shadow-md sticky top-0 z-50">
+    <!-- Header / Navbar chuyên nghiệp -->
+    <header class="bg-cobalt text-white shadow-lg sticky top-0 z-50 border-b border-blue-900">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-store text-2xl"></i>
-                <span class="text-xl font-bold">DirectMarket <span class="text-xs bg-green-500 text-white px-2 py-0.5 rounded-full uppercase">0% Phí Sàn</span></span>
+            <div class="flex items-center space-x-3">
+                <div class="bg-blue-600 p-2 rounded-xl text-white font-black text-xl shadow-inner">
+                    <i class="fa-solid fa-bottle-droplet"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-black tracking-wide uppercase text-blue-400">Putin & Kamax</h1>
+                    <p class="text-xs text-slate-300">Tổng kho nước giặt xả chuyên dụng</p>
+                </div>
             </div>
-            <div>
-                <button onclick="openModal()" class="bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded-lg shadow transition flex items-center space-x-2">
-                    <i class="fa-solid fa-plus"></i>
-                    <span>Đăng Bán Ngay</span>
+            <div class="flex items-center space-x-3">
+                <a href="tel:0915155284" class="hidden md:flex items-center space-x-1 text-sm bg-red-600 hover:bg-red-700 text-white font-bold px-3 py-2 rounded-lg transition shadow">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>091515.5284</span>
+                </a>
+                <button onclick="openModal()" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-2 rounded-lg shadow-md transition flex items-center space-x-2 text-sm uppercase tracking-wider">
+                    <i class="fa-solid fa-plus-circle"></i>
+                    <span>Đăng Sản Phẩm</span>
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- Banner Giới thiệu -->
-    <section class="bg-blue-700 text-white py-12 px-4 text-center">
-        <div class="max-w-3xl mx-auto">
-            <h1 class="text-3xl md:text-4xl font-bold mb-4">Kết Nối Người Bán & Khách Hàng Trực Tiếp</h1>
-            <p class="text-blue-100 text-lg mb-6">Không phí hoa hồng, không trung gian giữ tiền. Khách và người bán tự thỏa thuận thanh toán và vận chuyển.</p>
-            <div class="flex justify-center space-x-4 text-sm font-medium">
-                <span class="bg-blue-800 px-3 py-1.5 rounded-lg">🛡️ Giao dịch minh bạch</span>
-                <span class="bg-blue-800 px-3 py-1.5 rounded-lg">💬 Liên hệ trực tiếp Zalo/SĐT</span>
-                <span class="bg-blue-800 px-3 py-1.5 rounded-lg">💸 0% Phí sàn trọn đời</span>
+    <!-- Banner Giới thiệu Đẳng cấp -->
+    <section class="bg-gradient-to-r from-blue-900 via-cobalt to-indigo-900 text-white py-12 px-4 text-center shadow-xl relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest inline-block mb-3 shadow">Dành Riêng Cho Tiệm Giặt Sấy, Khách Sạn, Homestay</span>
+            <h2 class="text-3xl md:text-5xl font-black mb-4 leading-tight">Giải Pháp Giặt Xả Sạch Sâu - Tiết Kiệm Tối Ưu</h2>
+            <p class="text-slate-200 text-base md:text-lg mb-6 max-w-2xl mx-auto">Mua trực tiếp tại kho với chính sách giá sỉ cực tốt: <b class="text-yellow-400">"Mua 1 can - Giá sỉ như 10 can"</b>. Không qua trung gian, chiết khấu cao cho đối tác!</p>
+            
+            <div class="flex flex-wrap justify-center gap-3 text-xs md:text-sm font-semibold">
+                <span class="bg-blue-800/80 border border-blue-600 px-4 py-2 rounded-xl backdrop-blur">🛡️ Siêu đậm đập - Lợi nhuận tốt hơn</span>
+                <span class="bg-blue-800/80 border border-blue-600 px-4 py-2 rounded-xl backdrop-blur">💬 Tư vấn Zalo trực tiếp 24/7</span>
+                <span class="bg-blue-800/80 border border-blue-600 px-4 py-2 rounded-xl backdrop-blur">💸 Giao hàng tận nơi toàn quốc</span>
             </div>
         </div>
     </section>
 
     <!-- Danh sách sản phẩm -->
-    <main class="container mx-auto px-4 py-8">
-        <div class="flex justify-between items-center mb-6">
-            <h2 class="text-2xl font-bold text-gray-800">Sản phẩm mới đăng</h2>
-            <span class="text-sm text-gray-500" id="product-count">Hiển thị tất cả</span>
+    <main class="container mx-auto px-4 py-10">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 border-b pb-4 gap-4">
+            <div>
+                <h3 class="text-2xl font-black text-cobalt flex items-center gap-2">
+                    <i class="fa-solid fa-boxes-stacked text-blue-600"></i> Danh Mục Sản Phẩm Kho Hàng
+                </h3>
+                <p class="text-slate-500 text-sm">Các dòng sản phẩm chuyên dụng can 10kg và tinh chất đậm đặc</p>
+            </div>
+            <div class="bg-blue-50 border border-blue-200 text-blue-800 px-4 py-2 rounded-xl text-sm font-medium">
+                📞 Hotline tổng kho: <a href="tel:0915155284" class="font-bold text-red-600 underline">091515.5284</a>
+            </div>
         </div>
 
-        <!-- Grid hiển thị sản phẩm -->
+        <!-- Grid sản phẩm -->
         <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <!-- Sản phẩm mẫu 1 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition border border-gray-100 flex flex-col justify-between">
+            
+            <!-- Sản phẩm 1: Putin Proclean 5X (10KG) -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition border border-slate-200 flex flex-col justify-between group">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80" alt="Đồng hồ" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <span class="text-xs bg-blue-100 text-blue-600 font-semibold px-2 py-1 rounded">Thời trang</span>
-                        <h3 class="font-bold text-lg mt-2 text-gray-800">Đồng hồ nam thông minh</h3>
-                        <p class="text-red-600 font-bold text-xl mt-1">1.250.000 đ</p>
-                        <p class="text-gray-500 text-sm mt-2"><i class="fa-solid fa-user-tag mr-1"></i> Người bán: Anh Tuấn (Hà Nội)</p>
+                    <div class="relative overflow-hidden bg-slate-100 h-56">
+                        <img src="https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80" alt="Putin Proclean 5X" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg shadow">Can 10KG</span>
+                        <span class="absolute top-3 right-3 bg-cobalt text-white text-xs font-bold px-2.5 py-1 rounded-lg shadow">Sỉ Tiệm Giặt</span>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs bg-blue-100 text-blue-700 font-bold px-2.5 py-1 rounded-md">Nước Giặt Chuyên Dụng</span>
+                        <h4 class="font-bold text-lg mt-2 text-slate-800 line-clamp-1">Putin Proclean 5X (10Kg)</h4>
+                        <p class="text-slate-500 text-xs mt-1">Làm sạch sâu, trắng sạch vượt trội, bảo vệ sợi vải bền đẹp.</p>
+                        <div class="mt-3 flex items-baseline justify-between">
+                            <span class="text-red-600 font-extrabold text-lg">Liên hệ giá sỉ</span>
+                            <span class="text-xs text-slate-400 font-medium">Đậm đặc 5X</span>
+                        </div>
                     </div>
                 </div>
-                <div class="p-4 pt-0">
-                    <button onclick="contactSeller('Anh Tuấn', '0987654321')" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 rounded-lg transition flex items-center justify-center space-x-2">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>Liên Hệ Trực Tiếp</span>
+                <div class="p-5 pt-0">
+                    <button onclick="contactSeller('Công ty Putin & Kamax Vietnam', '0915155284')" class="w-full bg-cobalt hover:bg-blue-900 text-white font-bold py-2.5 rounded-xl transition shadow flex items-center justify-center space-x-2 text-sm">
+                        <i class="fa-solid fa-headset text-blue-400"></i>
+                        <span>Tư Vấn & Đặt Hàng Sỉ</span>
                     </button>
                 </div>
             </div>
 
-            <!-- Sản phẩm mẫu 2 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition border border-gray-100 flex flex-col justify-between">
+            <!-- Sản phẩm 2: Kamax SuperClean - Hương Passiona -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition border border-slate-200 flex flex-col justify-between group">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="Tai nghe" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <span class="text-xs bg-green-100 text-green-600 font-semibold px-2 py-1 rounded">Điện tử</span>
-                        <h3 class="font-bold text-lg mt-2 text-gray-800">Tai nghe chống ồn Bluetooth</h3>
-                        <p class="text-red-600 font-bold text-xl mt-1">850.000 đ</p>
-                        <p class="text-gray-500 text-sm mt-2"><i class="fa-solid fa-user-tag mr-1"></i> Người bán: Shop Công Nghệ</p>
+                    <div class="relative overflow-hidden bg-slate-100 h-56">
+                        <img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=600&q=80" alt="Kamax Passiona" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-3 left-3 bg-pink-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg shadow">Hương Passiona</span>
+                        <span class="absolute top-3 right-3 bg-cobalt text-white text-xs font-bold px-2.5 py-1 rounded-lg shadow">Can 5L/10L</span>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs bg-pink-100 text-pink-700 font-bold px-2.5 py-1 rounded-md">Giặt Xả 5 trong 1</span>
+                        <h4 class="font-bold text-lg mt-2 text-slate-800 line-clamp-1">Kamax SuperClean - Passiona</h4>
+                        <p class="text-slate-500 text-xs mt-1">Thơm đạm mê hòa quyện, lưu hương ngát thơm 365 ngày.</p>
+                        <div class="mt-3 flex items-baseline justify-between">
+                            <span class="text-red-600 font-extrabold text-lg">Liên hệ giá sỉ</span>
+                            <span class="text-xs text-slate-400 font-medium">Khử mùi, sạch khuẩn</span>
+                        </div>
                     </div>
                 </div>
-                <div class="p-4 pt-0">
-                    <button onclick="contactSeller('Shop Công Nghệ', '0912345678')" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 rounded-lg transition flex items-center justify-center space-x-2">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>Liên Hệ Trực Tiếp</span>
+                <div class="p-5 pt-0">
+                    <button onclick="contactSeller('Công ty Putin & Kamax Vietnam', '0915155284')" class="w-full bg-cobalt hover:bg-blue-900 text-white font-bold py-2.5 rounded-xl transition shadow flex items-center justify-center space-x-2 text-sm">
+                        <i class="fa-solid fa-headset text-blue-400"></i>
+                        <span>Tư Vấn & Đặt Hàng Sỉ</span>
                     </button>
                 </div>
+            </div>
+
+            <!-- Sản phẩm 3: Kamax SuperClean - Hương Classy -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition border border-slate-200 flex flex-col justify-between group">
+                <div>
+                    <div class="relative overflow-hidden bg-slate-100 h-56">
+                        <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=600&q=80" alt="Kamax Classy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg shadow">Hương Classy</span>
+                        <span class="absolute top-3 right-3 bg-cobalt text-white text-xs font-bold px-2.5 py-1 rounded-lg shadow">Can 5L/10L</span>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs bg-blue-100 text-blue-700 font-bold px-2.5 py-1 rounded-md">Giặt Xả Cao Cấp</span>
+                        <h4 class="font-bold text-lg mt-2 text-slate-800 line-clamp-1">Kamax SuperClean - Classy</h4>
+                        <p class="text-slate-500 text-xs mt-1">Thơm quý phái bền lâu, đánh bay vết bẩn cứng đầu.</p>
+                        <div class="mt-3 flex items-baseline justify-between">
+                            <span class="text-red-600 font-extrabold text-lg">Liên hệ giá sỉ</span>
+                            <span class="text-xs text-slate-400 font-medium">Siêu sạch vượt trội</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <button onclick="contactSeller('Công ty Putin & Kamax Vietnam', '0915155284')" class="w-full bg-cobalt hover:bg-blue-900 text-white font-bold py-2.5 rounded-xl transition shadow flex items-center justify-center space-x-2 text-sm">
+                        <i class="fa-solid fa-headset text-blue-400"></i>
+                        <span>Tư Vấn & Đặt Hàng Sỉ</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 4: Tinh Cốt Xả Vải Putin Rosie -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition border border-slate-200 flex flex-col justify-between group">
+                <div>
+                    <div class="relative overflow-hidden bg-slate-100 h-56">
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80" alt="Putin Rosie" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-3 left-3 bg-rose-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg shadow">Tinh Cốt 500ML</span>
+                        <span class="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg shadow">Đậm Đặc 10 Lần</span>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs bg-rose-100 text-rose-700 font-bold px-2.5 py-1 rounded-md">Tinh Cốt Xả Vải</span>
+                        <h4 class="font-bold text-lg mt-2 text-slate-800 line-clamp-1">Tinh Cốt Xả Vải Putin Rosie</h4>
+                        <p class="text-slate-500 text-xs mt-1">Đậm đặc gấp 10 lần, tương đương 5kg xả thông thường.</p>
+                        <div class="mt-3 flex items-baseline justify-between">
+                            <span class="text-red-600 font-extrabold text-lg">Liên hệ giá sỉ</span>
+                            <span class="text-xs text-slate-400 font-medium">Hương hoa hồng</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <button onclick="contactSeller('Công ty Putin & Kamax Vietnam', '0915155284')" class="w-full bg-cobalt hover:bg-blue-900 text-white font-bold py-2.5 rounded-xl transition shadow flex items-center justify-center space-x-2 text-sm">
+                        <i class="fa-solid fa-headset text-blue-400"></i>
+                        <span>Tư Vấn & Đặt Hàng Sỉ</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Khu vực hiển thị sản phẩm do người bán tự đăng thêm -->
+        <div id="custom-products-section" class="mt-12">
+            <h4 class="text-xl font-bold text-slate-800 mb-6 flex items-center gap-2">
+                <i class="fa-solid fa-circle-plus text-emerald-600"></i> Sản Phẩm Mới Khác Từ Kho Hàng
+            </h4>
+            <div id="product-grid-custom" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Sản phẩm tự động load từ LocalStorage -->
             </div>
         </div>
     </main>
 
     <!-- Modal Đăng Sản Phẩm Mới -->
-    <div id="postModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
-        <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl relative">
-            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-650 text-xl"><i class="fa-solid fa-xmark"></i></button>
-            <h3 class="text-xl font-bold mb-4 text-gray-800">Đăng Sản Phẩm Mới (Miễn Phí)</h3>
+    <div id="postModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 md:p-8 shadow-2xl relative border border-slate-100">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 text-2xl font-bold"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="text-2xl font-black mb-2 text-cobalt">Đăng Sản Phẩm Mới</h3>
+            <p class="text-slate-500 text-xs mb-6">Thêm sản phẩm trực tiếp vào kho hàng online của bạn (Miễn phí 100%)</p>
             
             <form id="productForm" onsubmit="addProduct(event)" class="space-y-4">
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Tên sản phẩm</label>
-                    <input type="text" id="title" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="VD: Giày thể thao nam...">
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Tên sản phẩm / Dòng nước giặt xả</label>
+                    <input type="text" id="title" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-600 text-sm" placeholder="VD: Nước giặt Putin Extra 10kg...">
                 </div>
                 <div class="grid grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Giá bán (VNĐ)</label>
-                        <input type="number" id="price" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="VD: 500000">
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Giá sỉ / lẻ (VNĐ)</label>
+                        <input type="number" id="price" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-600 text-sm" placeholder="VD: 250000">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Danh mục</label>
-                        <select id="category" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            <option value="Thời trang">Thời trang</option>
-                            <option value="Điện tử">Điện tử</option>
-                            <option value="Gia dụng">Gia dụng</option>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Danh mục</label>
+                        <select id="category" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-600 text-sm">
+                            <option value="Nước Giặt Chuyên Dụng">Nước Giặt Chuyên Dụng</option>
+                            <option value="Giặt Xả 5 trong 1">Giặt Xả 5 trong 1</option>
+                            <option value="Tinh Cốt Xả Vải">Tinh Cốt Xả Vải</option>
                             <option value="Khác">Khác</option>
                         </select>
                     </div>
                 </div>
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Link hình ảnh sản phẩm</label>
-                    <input type="url" id="image" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Dán link ảnh từ internet vào đây">
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Link hình ảnh sản phẩm</label>
+                    <input type="url" id="image" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-600 text-sm" placeholder="Dán link ảnh từ internet vào đây">
                 </div>
                 <div class="grid grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Tên người bán / Shop</label>
-                        <input type="text" id="sellerName" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Tên của bạn">
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Đơn vị / Tên Shop</label>
+                        <input type="text" id="sellerName" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-600 text-sm" value="Kho Hàng Putin">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Số điện thoại / Zalo</label>
-                        <input type="text" id="sellerPhone" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="SĐT liên hệ">
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Hotline / Zalo liên hệ</label>
+                        <input type="text" id="sellerPhone" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-600 text-sm" value="0915155284">
                     </div>
                 </div>
-                <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg transition shadow">Đăng Bài Ngay</button>
+                <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-xl transition shadow-lg text-sm uppercase tracking-wider mt-2">Đăng Bài Lên Kho Ngay</button>
             </form>
         </div>
     </div>
 
-    <!-- Modal Thông Báo Liên Hệ -->
-    <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
-        <div class="bg-white rounded-2xl max-w-sm w-full p-6 text-center shadow-2xl">
-            <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
-                <i class="fa-solid fa-headset"></i>
+    <!-- Modal Thông Báo Liên Hệ Trực Tiếp -->
+    <div id="contactModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 text-center shadow-2xl border border-slate-100">
+            <div class="w-14 h-14 bg-blue-100 text-cobalt rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl shadow-inner">
+                <i class="fa-solid fa-phone-volume"></i>
             </div>
-            <h3 class="text-lg font-bold text-gray-800 mb-2">Thông tin người bán</h3>
-            <p id="contact-info" class="text-gray-600 mb-4 text-sm"></p>
+            <h4 class="text-xl font-black text-slate-800 mb-1">Liên Hệ Kho Hàng Sỉ</h4>
+            <p class="text-slate-500 text-xs mb-4">Kết nối trực tiếp không qua trung gian, chiết khấu tốt nhất cho đại lý và tiệm giặt.</p>
+            <div id="contact-info" class="bg-slate-50 p-4 rounded-2xl border border-slate-200 mb-5 text-sm"></div>
             <div class="flex space-x-2">
-                <button onclick="closeContactModal()" class="w-full bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 rounded-lg transition">Đóng</button>
+                <button onclick="closeContactModal()" class="w-full bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-3 rounded-xl transition text-sm">Đóng Lại</button>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-6 mt-12">
-        <p class="text-sm">Nền tảng kết nối trực tiếp mua bán — Tiết kiệm 100% phí sàn thương mại điện tử.</p>
+    <!-- Footer Chính Hãng -->
+    <footer class="bg-cobalt text-white py-10 mt-16 border-t border-blue-900">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-lg font-black uppercase text-blue-400 mb-2">Công Ty Putin & Kamax Vietnam</h3>
+            <p class="text-slate-300 text-sm mb-4">Chuyên cung cấp sỉ nước giặt, xả vải chuyên dụng cho các tiệm giặt, khách sạn, homestay trên toàn quốc.</p>
+            <p class="text-red-400 font-bold text-base mb-6">Hotline Tổng Kho: 091515.5284</p>
+            <div class="border-t border-blue-900/60 pt-6 text-xs text-slate-400">
+                &copy; 2026 Putin & Kamax Vietnam. Nền tảng kết nối trực tiếp 0% phí sàn.
+            </div>
+        </div>
     </footer>
 
-    <!-- JavaScript Xử lý Logic -->
+    <!-- JavaScript Xử Lý -->
     <script>
-        // Mở / Đóng Modal Đăng Bài
         function openModal() {
             document.getElementById('postModal').classList.remove('hidden');
             document.getElementById('postModal').classList.add('flex');
@@ -164,9 +274,8 @@
             document.getElementById('postModal').classList.remove('flex');
         }
 
-        // Xử lý Liên Hệ Người Bán
         function contactSeller(name, phone) {
-            document.getElementById('contact-info').innerHTML = `Liên hệ trực tiếp với <b>${name}</b> qua số điện thoại/Zalo: <br><span class="text-blue-600 font-bold text-lg">${phone}</span>`;
+            document.getElementById('contact-info').innerHTML = `Đơn vị: <b>${name}</b><br>Hotline/Zalo tư vấn sỉ: <br><a href="tel:${phone}" class="text-red-600 font-black text-lg underline block mt-1">${phone}</a>`;
             document.getElementById('contactModal').classList.remove('hidden');
             document.getElementById('contactModal').classList.add('flex');
         }
@@ -175,66 +284,40 @@
             document.getElementById('contactModal').classList.remove('flex');
         }
 
-        // Thêm Sản Phẩm Mới (Lưu tạm vào LocalStorage của trình duyệt)
-        let products = JSON.parse(localStorage.getItem('direct_market_products')) || [];
+        let products = JSON.parse(localStorage.getItem('putin_kamax_products')) || [];
 
-        function renderProducts() {
-            const grid = document.getElementById('product-grid');
-            let defaultHTML = `
-                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition border border-gray-100 flex flex-col justify-between">
-                    <div>
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80" alt="Đồng hồ" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <span class="text-xs bg-blue-100 text-blue-600 font-semibold px-2 py-1 rounded">Thời trang</span>
-                            <h3 class="font-bold text-lg mt-2 text-gray-800">Đồng hồ nam thông minh</h3>
-                            <p class="text-red-600 font-bold text-xl mt-1">1.250.000 đ</p>
-                            <p class="text-gray-500 text-sm mt-2"><i class="fa-solid fa-user-tag mr-1"></i> Người bán: Anh Tuấn (Hà Nội)</p>
-                        </div>
-                    </div>
-                    <div class="p-4 pt-0">
-                        <button onclick="contactSeller('Anh Tuấn', '0987654321')" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 rounded-lg transition flex items-center justify-center space-x-2">
-                            <i class="fa-solid fa-phone"></i><span>Liên Hệ Trực Tiếp</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition border border-gray-100 flex flex-col justify-between">
-                    <div>
-                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="Tai nghe" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <span class="text-xs bg-green-100 text-green-600 font-semibold px-2 py-1 rounded">Điện tử</span>
-                            <h3 class="font-bold text-lg mt-2 text-gray-800">Tai nghe chống ồn Bluetooth</h3>
-                            <p class="text-red-600 font-bold text-xl mt-1">850.000 đ</p>
-                            <p class="text-gray-500 text-sm mt-2"><i class="fa-solid fa-user-tag mr-1"></i> Người bán: Shop Công Nghệ</p>
-                        </div>
-                    </div>
-                    <div class="p-4 pt-0">
-                        <button onclick="contactSeller('Shop Công Nghệ', '0912345678')" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 rounded-lg transition flex items-center justify-center space-x-2">
-                            <i class="fa-solid fa-phone"></i><span>Liên Hệ Trực Tiếp</span>
-                        </button>
-                    </div>
-                </div>
-            `;
+        function renderCustomProducts() {
+            const grid = document.getElementById('product-grid-custom');
+            if (products.length === 0) {
+                document.getElementById('custom-products-section').style.display = 'none';
+                return;
+            }
+            document.getElementById('custom-products-section').style.display = 'block';
 
-            let customHTML = products.map(p => `
-                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition border border-gray-100 flex flex-col justify-between">
+            grid.innerHTML = products.map(p => `
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition border border-slate-200 flex flex-col justify-between group">
                     <div>
-                        <img src="${p.image}" alt="${p.title}" class="w-full h-48 object-cover" onerror="this.src='https://via.placeholder.com/500?text=No+Image'">
-                        <div class="p-4">
-                            <span class="text-xs bg-purple-100 text-purple-600 font-semibold px-2 py-1 rounded">${p.category}</span>
-                            <h3 class="font-bold text-lg mt-2 text-gray-800">${p.title}</h3>
-                            <p class="text-red-600 font-bold text-xl mt-1">${Number(p.price).toLocaleString('vi-VN')} đ</p>
-                            <p class="text-gray-500 text-sm mt-2"><i class="fa-solid fa-user-tag mr-1"></i> Người bán: ${p.sellerName}</p>
+                        <div class="relative overflow-hidden bg-slate-100 h-56">
+                            <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80'">
+                            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg shadow">${p.category}</span>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs bg-blue-100 text-blue-700 font-bold px-2.5 py-1 rounded-md">Sản phẩm mới</span>
+                            <h4 class="font-bold text-lg mt-2 text-slate-800 line-clamp-1">${p.title}</h4>
+                            <div class="mt-3 flex items-baseline justify-between">
+                                <span class="text-red-600 font-extrabold text-lg">${Number(p.price).toLocaleString('vi-VN')} đ</span>
+                                <span class="text-xs text-slate-400 font-medium">${p.sellerName}</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-4 pt-0">
-                        <button onclick="contactSeller('${p.sellerName}', '${p.sellerPhone}')" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 rounded-lg transition flex items-center justify-center space-x-2">
-                            <i class="fa-solid fa-phone"></i><span>Liên Hệ Trực Tiếp</span>
+                    <div class="p-5 pt-0">
+                        <button onclick="contactSeller('${p.sellerName}', '${p.sellerPhone}')" class="w-full bg-cobalt hover:bg-blue-900 text-white font-bold py-2.5 rounded-xl transition shadow flex items-center justify-center space-x-2 text-sm">
+                            <i class="fa-solid fa-headset text-blue-400"></i>
+                            <span>Liên Hệ Trực Tiếp</span>
                         </button>
                     </div>
                 </div>
             `).join('');
-
-            grid.innerHTML = customHTML + defaultHTML;
         }
 
         function addProduct(e) {
@@ -249,16 +332,15 @@
             };
 
             products.unshift(newProduct);
-            localStorage.setItem('direct_market_products', JSON.stringify(products));
+            localStorage.setItem('putin_kamax_products', JSON.stringify(products));
             
-            renderProducts();
+            renderCustomProducts();
             closeModal();
             document.getElementById('productForm').reset();
-            alert('Đăng sản phẩm thành công! Sản phẩm của bạn đã xuất hiện trên trang.');
+            alert('Đăng sản phẩm lên kho thành công!');
         }
 
-        // Tải danh sách khi mở trang
-        renderProducts();
+        renderCustomProducts();
     </script>
 </body>
 </html>
